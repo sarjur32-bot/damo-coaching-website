@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Civil Services Academy</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+body{
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(to right,#e3f2fd,#fce4ec);
+}
+
+header{
+    background:#0d47a1;
+    color:white;
+    padding:15px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:700;
+}
+
+.menu{
+    font-size:25px;
+    cursor:pointer;
+}
+
+.dropdown{
+    display:none;
+    position:absolute;
+    right:20px;
+    top:60px;
+    background:white;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+    border-radius:10px;
+}
+
+.dropdown a{
+    display:block;
+    padding:10px 20px;
+    text-decoration:none;
+    color:black;
+}
+
+.dropdown a:hover{
+    background:#f1f1f1;
+}
+
+.hero{
+    text-align:center;
+    padding:40px;
+}
+
+.hero img{
+    width:250px;
+    border-radius:15px;
+}
+
+section{
+    padding:30px;
+}
+
+h2{
+    color:#0d47a1;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    margin:15px 0;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+button{
+    padding:10px 20px;
+    border:none;
+    border-radius:10px;
+    background:#0d47a1;
+    color:white;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1565c0;
+}
+
+footer{
+    background:#0d47a1;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">Civil Services Academy</div>
+<div class="menu" onclick="toggleMenu()">⋮</div>
+<div class="dropdown" id="dropdown">
+<a href="#">Language</a>
+<a href="#">Complaint</a>
+<a href="#">Settings</a>
+<a href="#">Courses</a>
+</div>
+</header>
+
+<div class="hero">
+<h1>UPSC / Civil Services Preparation</h1>
+<img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f" alt="Civil Aspirant">
+<p>Dream Big. Crack UPSC.</p>
+</div>
+
+<section>
+<h2>Prelims Subjects</h2>
+<div class="card">GS Paper 1 (History, Geography, Polity, Economy, Environment)</div>
+<div class="card">CSAT (Maths, Reasoning, Comprehension)</div>
+<button onclick="startTest()">Start Prelims Test</button>
+</section>
+
+<section>
+<h2>Mains Subjects</h2>
+<div class="card">Essay</div>
+<div class="card">GS 1 - Indian Heritage & Culture</div>
+<div class="card">GS 2 - Governance & Polity</div>
+<div class="card">GS 3 - Economy & Science</div>
+<div class="card">GS 4 - Ethics</div>
+<button onclick="startTest()">Start Mains Test</button>
+</section>
+
+<section>
+<h2>Recorded Classes</h2>
+<div class="card">
+Video Title: Introduction to Polity  
+<br><button>Watch Now</button>
+</div>
+</section>
+
+<section>
+<h2>Live Classes</h2>
+<div class="card">
+Next Live Class: Indian Economy  
+<br><button>Join Live</button>
+</div>
+</section>
+
+<section>
+<h2>Current Affairs / GK</h2>
+<div class="card">
+Daily Current Affairs Update
+</div>
+</section>
+
+<section>
+<h2>Contact Us</h2>
+<div class="card">
+📞 Phone: 9876543210 <br>
+📧 Email: civilacademy@gmail.com <br>
+💬 WhatsApp: 9876543210 <br>
+📍 Address: Your City, India
+</div>
+</section>
+
+<footer>
+© 2026 Civil Services Academy | All Rights Reserved
+</footer>
+
+<script>
+function toggleMenu(){
+    var menu = document.getElementById("dropdown");
+    menu.style.display = menu.style.display === "block" ? "none" : "block";
+}
+
+function startTest(){
+    alert("Test System Coming Soon!");
+}
+</script>
+
+</body>
+</html>
